@@ -1,24 +1,45 @@
 /* styles.css */
 
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Staatliches&display=swap');
 
 :root {
     box-sizing: border-box;
 }
 
 html {
-    border: .01rem solid red;
     min-height: 100vh;
     max-width: 100vw;
 }
 
-body {
+.top h3 {
+    font-family: 'Gloria Hallelujah', cursive;
+}
 
+.bottom h5 {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.form h4 {
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
 label {
     padding-top: 18px;
-    font-family: 'Staatliches', cursive;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+input {
+    border: .01rem solid black;
+    border-radius: 5px;
+}
+
+input:valid {
+    border-color: darkgreen;
+}
+
+input:invalid {
+    border-color: darkred;
 }
 
 .container {
@@ -26,9 +47,44 @@ label {
 }
 
 .left-side {
-    border: .1rem solid blue;
     display: flex;
     flex: 1;
+    flex-direction: column;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    flex: 1;
+    position: absolute;
+    top: 200px;
+}
+
+.banner {
+    display: flex;
+    height: 160px;
+    width: 627.391px;
+    background-color: grey;
+    opacity: 0.5;
+    justify-content: center;
+    padding: 8px 0 8px 0;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.banner p {
+    color: whitesmoke;
+    font-size: 98px;
+    margin-top: -16px;
+}
+
+.photo-credit {
+    display: flex;
+    flex: 1;
+    position: relative;
+    color: white;
+    margin-top: -24px;
+    justify-content: center;
+    text-align: center;
 }
 
 .right-side {
@@ -48,9 +104,9 @@ label {
     margin: 2rem 0;
     display: flex;
     justify-content: flex-start;
-    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+    box-shadow: inset /* 0 -3em 3em rgba(0,0,0,0.1), */
              0 0  0 2px rgb(255,255,255),
-             0.3em 0.3em 1em rgba(0,0,0,0.3);
+             0 0.3em 1em rgba(0,0,0,0.3);
 }
 
 
@@ -87,7 +143,7 @@ img.background {
     margin-left: 32px;
     justify-content: center;
     align-items: center;
-
+    border-radius: 5px;
   }
 
   .log-in {
@@ -95,43 +151,3 @@ img.background {
     margin-left: 30px;
   }
 
-/* 
-.left-side {
-    background: url("moreno-matkovic-unsplash.jpg");
-    border: .1rem solid black;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
-    left: 0;
-    height: 100vh;
-    object-fit: cover;
-    justify-content: center;
-    align-items: center;
-}
-
-.right-side {
-    border: .01rem solid blue;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 3;
-    justify-content: center;
-}
-
-.form {
-    border: .01rem solid green;
-    display:flex;
-    flex: 1;
-}
-
-.top {
-    border: .01rem solid purple;
-    display flex;
-    flex: 1;
-}
-
-.bottom {
-    border: .01rem solid yellow;
-    display: flex;
-    flex: 1;
-}
- */
